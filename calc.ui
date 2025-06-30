@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>351</width>
+    <height>703</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>351</width>
+    <height>703</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>351</width>
+    <height>703</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>28</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color:#fdfdfd;</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>200</y>
+      <width>351</width>
+      <height>503</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>10</width>
+      <height>83</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string>QPushButton {
+		border:1px solid #f1f1f1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="clearmode_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+		background-color:#f6f6f6;
+color:#a1a1a1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>mc</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="clear_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Yu Gothic UI Semibold</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+		background-color:#f6f6f6;
+		color:#00c8c0;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>C</string>
+       </property>
+       <property name="shortcut">
+        <string>C</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="setmodenegative_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+		background-color:#f6f6f6;
+color:#a1a1a1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>m-</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="seven_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>7</string>
+       </property>
+       <property name="shortcut">
+        <string>7</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="four_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="shortcut">
+        <string>4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="one_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="shortcut">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="multiply_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+		background-color:#f6f6f6;
+		color:#00c8c0;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+       <property name="shortcut">
+        <string>X</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="five_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="shortcut">
+        <string>5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="eight_Button">
+       <property name="minimumSize">
+        <size>
+         <width>10</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>8</string>
+       </property>
+       <property name="shortcut">
+        <string>8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="two_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="shortcut">
+        <string>2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="percent_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Yu Gothic UI Semibold</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>%</string>
+       </property>
+       <property name="shortcut">
+        <string>%</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="divide_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+		background-color:#f6f6f6;
+		color:#00c8c0;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>÷</string>
+       </property>
+       <property name="shortcut">
+        <string>/</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="six_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>6</string>
+       </property>
+       <property name="shortcut">
+        <string>6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QPushButton" name="zero_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="shortcut">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="three_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="shortcut">
+        <string>3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="nine_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>9</string>
+       </property>
+       <property name="shortcut">
+        <string>9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QPushButton" name="decimalpoint_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Yu Gothic UI Semibold</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>.</string>
+       </property>
+       <property name="shortcut">
+        <string>.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="cancelone_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+		background-color:#f6f6f6;
+	color:#f6f6f6;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Images/delete_Button.png</normaloff>Images/delete_Button.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>77</width>
+         <height>44</height>
+        </size>
+       </property>
+       <property name="shortcut">
+        <string>Backspace</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="minus_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+		background-color:#f6f6f6;
+		color:#00c8c0;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+       <property name="shortcut">
+        <string>-</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3" rowspan="2">
+      <widget class="QPushButton" name="equal_Button">
+       <property name="minimumSize">
+        <size>
+         <width>10</width>
+         <height>169</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:2px solid #f1f1f1;
+	background-color:#00b0c2;
+	color:#fdfdfd;
+	}
+QPushButton:hover {
+	background-color:#008492;
+}</string>
+       </property>
+       <property name="text">
+        <string>=</string>
+       </property>
+       <property name="shortcut">
+        <string>Return</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QPushButton" name="plus_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+		background-color:#f6f6f6;
+		color:#00c8c0;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+       <property name="shortcut">
+        <string>=</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="setmodepostive_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+		background-color:#f6f6f6;
+color:#a1a1a1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>m+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="setmodetomr_Button">
+       <property name="minimumSize">
+        <size>
+         <width>42</width>
+         <height>83</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+		border:1px solid #f1f1f1;
+		background-color:#f6f6f6;
+color:#a1a1a1;
+	}
+
+QPushButton:hover{
+background-color:#e9e9e9;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>mr</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="mode_Label">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:#aeaeae;</string>
+    </property>
+    <property name="text">
+     <string>M</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="result_Label">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>150</y>
+      <width>331</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI Semibold</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:#939393;</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="display_Label">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>331</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>33</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="whatsThis">
+     <string extracomment="name"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	background-color:#fdfdfd;
+	border:0px solid;
+	color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
