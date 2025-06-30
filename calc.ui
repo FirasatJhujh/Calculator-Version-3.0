@@ -33,6 +33,10 @@
   <property name="windowTitle">
    <string>Calculator</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Images/calculator.ico</normaloff>Images/calculator.ico</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
     <string notr="true">background-color:#fdfdfd;</string>
