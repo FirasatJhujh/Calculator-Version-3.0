@@ -1,5 +1,5 @@
 # Calculator v3.0
-![image](Images/calculator preview.png)
+![image](calculator preview.png)
 ## About it
 This program is written in pyQt5 python. its GUI is created in pydesigner. Ideo of its designed was taken by the calculator of honor 8C phone. This version has more features:
 
